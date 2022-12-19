@@ -1,0 +1,2078 @@
+function onOpen(){
+crearMenu();
+}
+
+//crear nuestro menú
+function crearMenu() {
+  //Creamos el menú
+  var menu = SpreadsheetApp.getUi().createMenu(" Imprimir Libreta");
+  
+  var menu2 = SpreadsheetApp.getUi().createMenu("3A");
+  menu2.addItem("3A01", "numero3A01");
+  menu2.addItem("3A02", "numero3A02");
+  menu2.addItem("3A03", "numero3A03");
+  menu2.addItem("3A04", "numero3A04");
+  menu2.addItem("3A05", "numero3A05");
+  menu2.addItem("3A06", "numero3A06");
+  menu2.addItem("3A07", "numero3A07");
+  menu2.addItem("3A08", "numero3A08");
+  menu2.addItem("3A09", "numero3A09");
+  menu2.addItem("3A10", "numero3A10");
+  menu2.addSeparator();
+  menu2.addItem("3A11", "numero3A11");
+  menu2.addItem("3A12", "numero3A12");
+  menu2.addItem("3A13", "numero3A13");
+  menu2.addItem("3A14", "numero3A14");
+  menu2.addItem("3A15", "numero3A15");
+  menu2.addItem("3A16", "numero3A16");
+  menu2.addItem("3A17", "numero3A17");
+  menu2.addItem("3A18", "numero3A18");
+  menu2.addItem("3A19", "numero3A19");
+  menu2.addItem("3A20", "numero3A20");
+  menu2.addSeparator();
+  menu2.addItem("3A21", "numero3A21");
+  menu2.addItem("3A22", "numero3A22");
+  menu2.addItem("3A23", "numero3A23");
+  menu2.addItem("3A24", "numero3A24");
+  menu2.addItem("3A25", "numero3A25");
+  menu2.addSeparator();
+  menu2.addItem("Automatico", "Automatico3A");
+  menu.addSubMenu(menu2);
+
+  var menu3 = SpreadsheetApp.getUi().createMenu("3B");
+  menu3.addItem("3B01", "numero3B01");
+  menu3.addItem("3B02", "numero3B02");
+  menu3.addItem("3B03", "numero3B03");
+  menu3.addItem("3B04", "numero3B04");
+  menu3.addItem("3B05", "numero3B05");
+  menu3.addItem("3B06", "numero3B06");
+  menu3.addItem("3B07", "numero3B07");
+  menu3.addItem("3B08", "numero3B08");
+  menu3.addItem("3B09", "numero3B09");
+  menu3.addItem("3B10", "numero3B10");
+  menu3.addSeparator();
+  menu3.addItem("3B11", "numero3B11");
+  menu3.addItem("3B12", "numero3B12");
+  menu3.addItem("3B13", "numero3B13");
+  menu3.addItem("3B14", "numero3B14");
+  menu3.addItem("3B15", "numero3B15");
+  menu3.addItem("3B16", "numero3B16");
+  menu3.addItem("3B17", "numero3B17");
+  menu3.addItem("3B18", "numero3B18");
+  menu3.addItem("3B19", "numero3B19");
+  menu3.addItem("3B20", "numero3B20");
+  menu3.addSeparator();
+  menu3.addItem("3B21", "numero3B21");
+  menu3.addItem("3B22", "numero3B22");
+  menu3.addItem("3B23", "numero3B23");
+  menu3.addItem("3B24", "numero3B24");
+  menu3.addItem("3B25", "numero3B25");
+  menu3.addSeparator();
+  menu3.addItem("Automatico", "Automatico3B");
+  menu.addSubMenu(menu3);
+
+  var menu4 = SpreadsheetApp.getUi().createMenu("3C");
+  menu4.addItem("3C01", "numero3C01");
+  menu4.addItem("3C02", "numero3C02");
+  menu4.addItem("3C03", "numero3C03");
+  menu4.addItem("3C04", "numero3C04");
+  menu4.addItem("3C05", "numero3C05");
+  menu4.addItem("3C06", "numero3C06");
+  menu4.addItem("3C07", "numero3C07");
+  menu4.addItem("3C08", "numero3C08");
+  menu4.addItem("3C09", "numero3C09");
+  menu4.addItem("3C10", "numero3C10");
+  menu4.addSeparator();
+  menu4.addItem("3C11", "numero3C11");
+  menu4.addItem("3C12", "numero3C12");
+  menu4.addItem("3C13", "numero3C13");
+  menu4.addItem("3C14", "numero3C14");
+  menu4.addItem("3C15", "numero3C15");
+  menu4.addItem("3C16", "numero3C16");
+  menu4.addItem("3C17", "numero3C17");
+  menu4.addItem("3C18", "numero3C18");
+  menu4.addItem("3C19", "numero3C19");
+  menu4.addItem("3C20", "numero3C20");
+  menu4.addSeparator();
+  menu4.addItem("3C21", "numero3C21");
+  menu4.addItem("3C22", "numero3C22");
+  menu4.addItem("3C23", "numero3C23");
+  menu4.addItem("3C24", "numero3C24");
+  menu4.addItem("3C25", "numero3C25");
+  menu4.addSeparator();
+  menu4.addItem("Automatico", "Automatico3C");
+  menu.addSubMenu(menu4);
+
+  var menu5 = SpreadsheetApp.getUi().createMenu("3D");
+  menu5.addItem("3D01", "numero3D01");
+  menu5.addItem("3D02", "numero3D02");
+  menu5.addItem("3D03", "numero3D03");
+  menu5.addItem("3D04", "numero3D04");
+  menu5.addItem("3D05", "numero3D05");
+  menu5.addItem("3D06", "numero3D06");
+  menu5.addItem("3D07", "numero3D07");
+  menu5.addItem("3D08", "numero3D08");
+  menu5.addItem("3D09", "numero3D09");
+  menu5.addItem("3D10", "numero3D10");
+  menu5.addSeparator();
+  menu5.addItem("3D11", "numero3D11");
+  menu5.addItem("3D12", "numero3D12");
+  menu5.addItem("3D13", "numero3D13");
+  menu5.addItem("3D14", "numero3D14");
+  menu5.addItem("3D15", "numero3D15");
+  menu5.addItem("3D16", "numero3D16");
+  menu5.addItem("3D17", "numero3D17");
+  menu5.addItem("3D18", "numero3D18");
+  menu5.addItem("3D19", "numero3D19");
+  menu5.addItem("3D20", "numero3D20");
+  menu5.addSeparator();
+  menu5.addItem("3D21", "numero3D21");
+  menu5.addItem("3D22", "numero3D22");
+  menu5.addItem("3D23", "numero3D23");
+  menu5.addItem("3D24", "numero3D24");
+  menu5.addItem("3D25", "numero3D25");
+  menu5.addSeparator();
+  menu5.addItem("Automatico", "Automatico3D");
+  menu.addSubMenu(menu5);
+ 
+ 
+
+  //Agregamos el menu
+  menu.addToUi();
+}
+
+
+function numero3A01(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3A01");
+  if (hoja.getRange('A4').getValue() == '3A01') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3A01");  
+  
+    }
+  
+  }
+
+
+
+function numero3A02(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3A02");
+  if (hoja.getRange('A4').getValue() == '3A02') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3A02");  
+  
+    }
+  
+  }
+
+
+
+  function numero3A03(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3A03");
+  if (hoja.getRange('A4').getValue() == '3A03') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3A03");  
+  
+    }
+  
+  }
+
+
+
+
+function numero3A04(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3A04");
+  if (hoja.getRange('A4').getValue() == '3A04') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3A04");  
+  
+    }
+  
+  }
+
+
+
+  function numero3A05(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3A05");
+  if (hoja.getRange('A4').getValue() == '3A05') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3A05");  
+  
+    }
+  
+  }
+
+
+
+
+function numero3A06(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3A06");
+  if (hoja.getRange('A4').getValue() == '3A06') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3A06");  
+  
+    }
+  
+  }
+
+
+  function numero3A07(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3A07");
+  if (hoja.getRange('A4').getValue() == '3A07') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3A07");  
+  
+    }
+  
+  }
+
+
+
+
+function numero3A08(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3A08");
+  if (hoja.getRange('A4').getValue() == '3A08') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3A08");  
+  
+    }
+  
+  }
+
+  function numero3A09(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3A09");
+  if (hoja.getRange('A4').getValue() == '3A09') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3A09");  
+  
+    }
+  
+  }
+
+
+  function numero3A10(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3A10");
+  if (hoja.getRange('A4').getValue() == '3A10') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3A10");  
+  
+    }
+  
+  }
+
+
+
+
+function numero3A11(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3A11");
+  if (hoja.getRange('A4').getValue() == '3A11') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3A11");  
+  
+    }
+  
+  }
+
+
+  function numero3A12(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3A12");
+  if (hoja.getRange('A4').getValue() == '3A12') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3A12");  
+  
+    }
+  
+  }
+
+
+
+
+function numero3A13(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3A13");
+  if (hoja.getRange('A4').getValue() == '3A13') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3A13");  
+  
+    }
+  
+  }
+
+
+
+  function numero3A14(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3A14");
+  if (hoja.getRange('A4').getValue() == '3A14') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3A14");  
+  
+    }
+  
+  }
+
+
+
+
+function numero3A15(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3A15");
+  if (hoja.getRange('A4').getValue() == '3A15') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3A15");  
+  
+    }
+  
+  }
+
+
+  function numero3A16(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3A16");
+  if (hoja.getRange('A4').getValue() == '3A16') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3A16");  
+  
+    }
+  
+  }
+
+
+
+
+function numero3A17(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3A17");
+  if (hoja.getRange('A4').getValue() == '3A17') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3A17");  
+  
+    }
+  
+  }
+
+
+  function numero3A18(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3A18");
+  if (hoja.getRange('A4').getValue() == '3A18') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3A18");  
+  
+    }
+  
+  }
+
+
+
+
+function numero3A19(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3A19");
+  if (hoja.getRange('A4').getValue() == '3A19') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3A19");  
+  
+    }
+  
+  }
+
+
+
+  function numero3A20(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3A20");
+  if (hoja.getRange('A4').getValue() == '3A20') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3A20");  
+  
+    }
+  
+  }
+
+
+
+
+function numero3A21(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3A21");
+  if (hoja.getRange('A4').getValue() == '3A21') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3A21");  
+  
+    }
+  
+  }
+
+
+  function numero3A22(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3A22");
+  if (hoja.getRange('A4').getValue() == '3A22') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3A22");  
+  
+    }
+  
+  }
+
+
+
+
+function numero3A23(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3A23");
+  if (hoja.getRange('A4').getValue() == '3A23') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3A23");  
+  
+    }
+  
+  }
+
+
+  function numero3A24(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3A24");
+  if (hoja.getRange('A4').getValue() == '3A24') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3A24");  
+  
+    }
+  
+  }
+
+
+
+
+function numero3A25(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3A25");
+  if (hoja.getRange('A4').getValue() == '3A25') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3A25");  
+  
+    }
+  
+  }
+
+
+  function Automatico3A() {
+  var spreadsheet = SpreadsheetApp.getActive();
+  spreadsheet.getRange('A4').activate();
+  numero3A01();
+  numero3A02();
+  numero3A03();
+  numero3A04();
+  numero3A05();
+  numero3A06();
+  numero3A07();
+  numero3A08();
+  numero3A09();
+  numero3A10();
+  numero3A11();
+  numero3A12();
+  numero3A13();
+  numero3A14();
+  numero3A15();
+  numero3A16();
+  numero3A17();
+  numero3A18();
+  numero3A19();
+  numero3A20();
+  numero3A21();
+  numero3A22();
+  numero3A23();
+  numero3A24();
+  numero3A25();
+};
+
+
+
+///////////////////////////SECCION B ////////////////////////////////////
+
+function numero3B01(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3B01");
+  if (hoja.getRange('A4').getValue() == '3B01') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3B01");  
+  
+    }
+  
+  }
+
+
+
+function numero3B02(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3B02");
+  if (hoja.getRange('A4').getValue() == '3B02') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3B02");  
+  
+    }
+  
+  }
+
+
+
+  function numero3B03(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3B03");
+  if (hoja.getRange('A4').getValue() == '3B03') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3B03");  
+  
+    }
+  
+  }
+
+
+
+
+function numero3B04(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3B04");
+  if (hoja.getRange('A4').getValue() == '3B04') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3B04");  
+  
+    }
+  
+  }
+
+
+
+  function numero3B05(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3B05");
+  if (hoja.getRange('A4').getValue() == '3B05') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3B05");  
+  
+    }
+  
+  }
+
+
+
+
+function numero3B06(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3B06");
+  if (hoja.getRange('A4').getValue() == '3B06') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3B06");  
+  
+    }
+  
+  }
+
+
+  function numero3B07(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3B07");
+  if (hoja.getRange('A4').getValue() == '3B07') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3B07");  
+  
+    }
+  
+  }
+
+
+
+
+function numero3B08(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3B08");
+  if (hoja.getRange('A4').getValue() == '3B08') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3B08");  
+  
+    }
+  
+  }
+
+  function numero3B09(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3B09");
+  if (hoja.getRange('A4').getValue() == '3B09') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3B09");  
+  
+    }
+  
+  }
+
+
+  function numero3B10(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3B10");
+  if (hoja.getRange('A4').getValue() == '3B10') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3B10");  
+  
+    }
+  
+  }
+
+
+
+
+function numero3B11(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3B11");
+  if (hoja.getRange('A4').getValue() == '3B11') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3B11");  
+  
+    }
+  
+  }
+
+
+  function numero3B12(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3B12");
+  if (hoja.getRange('A4').getValue() == '3B12') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3B12");  
+  
+    }
+  
+  }
+
+
+
+
+function numero3B13(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3B13");
+  if (hoja.getRange('A4').getValue() == '3B13') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3B13");  
+  
+    }
+  
+  }
+
+
+
+  function numero3B14(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3B14");
+  if (hoja.getRange('A4').getValue() == '3B14') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3B14");  
+  
+    }
+  
+  }
+
+
+
+
+function numero3B15(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3B15");
+  if (hoja.getRange('A4').getValue() == '3B15') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3B15");  
+  
+    }
+  
+  }
+
+
+  function numero3B16(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3B16");
+  if (hoja.getRange('A4').getValue() == '3B16') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3B16");  
+  
+    }
+  
+  }
+
+
+
+
+function numero3B17(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3B17");
+  if (hoja.getRange('A4').getValue() == '3B17') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3B17");  
+  
+    }
+  
+  }
+
+
+  function numero3B18(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3B18");
+  if (hoja.getRange('A4').getValue() == '3B18') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3B18");  
+  
+    }
+  
+  }
+
+
+
+
+function numero3B19(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3B19");
+  if (hoja.getRange('A4').getValue() == '3B19') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3B19");  
+  
+    }
+  
+  }
+
+
+
+  function numero3B20(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3B20");
+  if (hoja.getRange('A4').getValue() == '3B20') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3B20");  
+  
+    }
+  
+  }
+
+
+
+
+function numero3B21(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3B21");
+  if (hoja.getRange('A4').getValue() == '3B21') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3B21");  
+  
+    }
+  
+  }
+
+
+  function numero3B22(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3B22");
+  if (hoja.getRange('A4').getValue() == '3B22') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3B22");  
+  
+    }
+  
+  }
+
+
+
+
+function numero3B23(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3B23");
+  if (hoja.getRange('A4').getValue() == '3B23') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3B23");  
+  
+    }
+  
+  }
+
+
+  function numero3B24(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3B24");
+  if (hoja.getRange('A4').getValue() == '3B24') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3B24");  
+  
+    }
+  
+  }
+
+
+
+
+function numero3B25(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3B25");
+  if (hoja.getRange('A4').getValue() == '3B25') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3B25");  
+  
+    }
+  
+  }
+
+
+  function Automatico3B() {
+  var spreadsheet = SpreadsheetApp.getActive();
+  spreadsheet.getRange('A4').activate();
+  numero3B01();
+  numero3B02();
+  numero3B03();
+  numero3B04();
+  numero3B05();
+  numero3B06();
+  numero3B07();
+  numero3B08();
+  numero3B09();
+  numero3B10();
+  numero3B11();
+  numero3B12();
+  numero3B13();
+  numero3B14();
+  numero3B15();
+  numero3B16();
+  numero3B17();
+  numero3B18();
+  numero3B19();
+  numero3B20();
+  numero3B21();
+  numero3B22();
+  numero3B23();
+  numero3B24();
+  numero3B25();
+};
+
+
+//////////////////SECCION C //////////////////////
+
+function numero3C01(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3C01");
+  if (hoja.getRange('A4').getValue() == '3C01') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3C01");  
+  
+    }
+  
+  }
+
+
+
+function numero3C02(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3C02");
+  if (hoja.getRange('A4').getValue() == '3C02') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3C02");  
+  
+    }
+  
+  }
+
+
+
+  function numero3C03(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3C03");
+  if (hoja.getRange('A4').getValue() == '3C03') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3C03");  
+  
+    }
+  
+  }
+
+
+
+
+function numero3C04(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3C04");
+  if (hoja.getRange('A4').getValue() == '3C04') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3C04");  
+  
+    }
+  
+  }
+
+
+
+  function numero3C05(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3C05");
+  if (hoja.getRange('A4').getValue() == '3C05') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3C05");  
+  
+    }
+  
+  }
+
+
+
+
+function numero3C06(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3C06");
+  if (hoja.getRange('A4').getValue() == '3C06') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3C06");  
+  
+    }
+  
+  }
+
+
+  function numero3C07(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3C07");
+  if (hoja.getRange('A4').getValue() == '3C07') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3C07");  
+  
+    }
+  
+  }
+
+
+
+
+function numero3C08(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3C08");
+  if (hoja.getRange('A4').getValue() == '3C08') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3C08");  
+  
+    }
+  
+  }
+
+  function numero3C09(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3C09");
+  if (hoja.getRange('A4').getValue() == '3C09') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3C09");  
+  
+    }
+  
+  }
+
+
+  function numero3C10(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3C10");
+  if (hoja.getRange('A4').getValue() == '3C10') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3C10");  
+  
+    }
+  
+  }
+
+
+
+
+function numero3C11(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3C11");
+  if (hoja.getRange('A4').getValue() == '3C11') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3C11");  
+  
+    }
+  
+  }
+
+
+  function numero3C12(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3C12");
+  if (hoja.getRange('A4').getValue() == '3C12') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3C12");  
+  
+    }
+  
+  }
+
+
+
+
+function numero3C13(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3C13");
+  if (hoja.getRange('A4').getValue() == '3C13') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3C13");  
+  
+    }
+  
+  }
+
+
+
+  function numero3C14(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3C14");
+  if (hoja.getRange('A4').getValue() == '3C14') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3C14");  
+  
+    }
+  
+  }
+
+
+
+
+function numero3C15(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3C15");
+  if (hoja.getRange('A4').getValue() == '3C15') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3C15");  
+  
+    }
+  
+  }
+
+
+  function numero3C16(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3C16");
+  if (hoja.getRange('A4').getValue() == '3C16') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3C16");  
+  
+    }
+  
+  }
+
+
+
+
+function numero3C17(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3C17");
+  if (hoja.getRange('A4').getValue() == '3C17') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3C17");  
+  
+    }
+  
+  }
+
+
+  function numero3C18(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3C18");
+  if (hoja.getRange('A4').getValue() == '3C18') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3C18");  
+  
+    }
+  
+  }
+
+
+
+
+function numero3C19(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3C19");
+  if (hoja.getRange('A4').getValue() == '3C19') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3C19");  
+  
+    }
+  
+  }
+
+
+
+  function numero3C20(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3C20");
+  if (hoja.getRange('A4').getValue() == '3C20') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3C20");  
+  
+    }
+  
+  }
+
+
+
+
+function numero3C21(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3C21");
+  if (hoja.getRange('A4').getValue() == '3C21') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3C21");  
+  
+    }
+  
+  }
+
+
+  function numero3C22(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3C22");
+  if (hoja.getRange('A4').getValue() == '3C22') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3C22");  
+  
+    }
+  
+  }
+
+
+
+
+function numero3C23(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3C23");
+  if (hoja.getRange('A4').getValue() == '3C23') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3C23");  
+  
+    }
+  
+  }
+
+
+  function numero3C24(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3C24");
+  if (hoja.getRange('A4').getValue() == '3C24') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3C24");  
+  
+    }
+  
+  }
+
+
+
+
+function numero3C25(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3C25");
+  if (hoja.getRange('A4').getValue() == '3C25') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3C25");  
+  
+    }
+  
+  }
+
+
+  function Automatico3C() {
+  var spreadsheet = SpreadsheetApp.getActive();
+  spreadsheet.getRange('A4').activate();
+  numero3C01();
+  numero3C02();
+  numero3C03();
+  numero3C04();
+  numero3C05();
+  numero3C06();
+  numero3C07();
+  numero3C08();
+  numero3C09();
+  numero3C10();
+  numero3C11();
+  numero3C12();
+  numero3C13();
+  numero3C14();
+  numero3C15();
+  numero3C16();
+  numero3C17();
+  numero3C18();
+  numero3C19();
+  numero3C20();
+  numero3C21();
+  numero3C22();
+  numero3C23();
+  numero3C24();
+  numero3C25();
+};
+
+
+
+//////////////////SECCION D ////////////////////
+
+function numero3D01(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3D01");
+  if (hoja.getRange('A4').getValue() == '3D01') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3D01");  
+  
+    }
+  
+  }
+
+
+
+function numero3D02(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3D02");
+  if (hoja.getRange('A4').getValue() == '3D02') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3D02");  
+  
+    }
+  
+  }
+
+
+
+  function numero3D03(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3D03");
+  if (hoja.getRange('A4').getValue() == '3D03') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3D03");  
+  
+    }
+  
+  }
+
+
+
+
+function numero3D04(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3D04");
+  if (hoja.getRange('A4').getValue() == '3D04') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3D04");  
+  
+    }
+  
+  }
+
+
+
+  function numero3D05(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3D05");
+  if (hoja.getRange('A4').getValue() == '3D05') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3D05");  
+  
+    }
+  
+  }
+
+
+
+
+function numero3D06(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3D06");
+  if (hoja.getRange('A4').getValue() == '3D06') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3D06");  
+  
+    }
+  
+  }
+
+
+  function numero3D07(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3D07");
+  if (hoja.getRange('A4').getValue() == '3D07') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3D07");  
+  
+    }
+  
+  }
+
+
+
+
+function numero3D08(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3D08");
+  if (hoja.getRange('A4').getValue() == '3D08') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3D08");  
+  
+    }
+  
+  }
+
+  function numero3D09(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3D09");
+  if (hoja.getRange('A4').getValue() == '3D09') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3D09");  
+  
+    }
+  
+  }
+
+
+  function numero3D10(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3D10");
+  if (hoja.getRange('A4').getValue() == '3D10') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3D10");  
+  
+    }
+  
+  }
+
+
+
+
+function numero3D11(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3D11");
+  if (hoja.getRange('A4').getValue() == '3D11') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3D11");  
+  
+    }
+  
+  }
+
+
+  function numero3D12(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3D12");
+  if (hoja.getRange('A4').getValue() == '3D12') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3D12");  
+  
+    }
+  
+  }
+
+
+
+
+function numero3D13(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3D13");
+  if (hoja.getRange('A4').getValue() == '3D13') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3D13");  
+  
+    }
+  
+  }
+
+
+
+  function numero3D14(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3D14");
+  if (hoja.getRange('A4').getValue() == '3D14') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3D14");  
+  
+    }
+  
+  }
+
+
+
+
+function numero3D15(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3D15");
+  if (hoja.getRange('A4').getValue() == '3D15') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3D15");  
+  
+    }
+  
+  }
+
+
+  function numero3D16(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3D16");
+  if (hoja.getRange('A4').getValue() == '3D16') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3D16");  
+  
+    }
+  
+  }
+
+
+
+
+function numero3D17(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3D17");
+  if (hoja.getRange('A4').getValue() == '3D17') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3D17");  
+  
+    }
+  
+  }
+
+
+  function numero3D18(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3D18");
+  if (hoja.getRange('A4').getValue() == '3D18') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3D18");  
+  
+    }
+  
+  }
+
+
+
+
+function numero3D19(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3D19");
+  if (hoja.getRange('A4').getValue() == '3D19') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3D19");  
+  
+    }
+  
+  }
+
+
+
+  function numero3D20(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3D20");
+  if (hoja.getRange('A4').getValue() == '3D20') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3D20");  
+  
+    }
+  
+  }
+
+
+
+
+function numero3D21(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3D21");
+  if (hoja.getRange('A4').getValue() == '3D21') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3D21");  
+  
+    }
+  
+  }
+
+
+  function numero3D22(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3D22");
+  if (hoja.getRange('A4').getValue() == '3D22') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3D22");  
+  
+    }
+  
+  }
+
+
+
+
+function numero3D23(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3D23");
+  if (hoja.getRange('A4').getValue() == '3D23') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3D23");  
+  
+    }
+  
+  }
+
+
+  function numero3D24(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3D24");
+  if (hoja.getRange('A4').getValue() == '3D24') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3D24");  
+  
+    }
+  
+  }
+
+
+
+
+function numero3D25(){
+  
+  var carpetaMaestra = DriveApp.getFolderById("1qD36FxaYax1YzC-7PgjRA0I8UpkwXEUB");
+  var hoja = SpreadsheetApp.getActiveSpreadsheet( );
+  var blob = hoja.getBlob();
+  
+  hoja.getRange("A4").activate();
+  hoja.getCurrentCell().setValue("3D25");
+  if (hoja.getRange('A4').getValue() == '3D25') {
+    Utilities.sleep(4000);
+    carpetaMaestra.createFile(blob).setName("ESTUDIANTE_COAR_3D25");  
+  
+    }
+  
+  }
+
+
+  function Automatico3D() {
+  var spreadsheet = SpreadsheetApp.getActive();
+  spreadsheet.getRange('A4').activate();
+  numero3D01();
+  numero3D02();
+  numero3D03();
+  numero3D04();
+  numero3D05();
+  numero3D06();
+  numero3D07();
+  numero3D08();
+  numero3D09();
+  numero3D10();
+  numero3D11();
+  numero3D12();
+  numero3D13();
+  numero3D14();
+  numero3D15();
+  numero3D16();
+  numero3D17();
+  numero3D18();
+  numero3D19();
+  numero3D20();
+  numero3D21();
+  numero3D22();
+  numero3D23();
+  numero3D24();
+  numero3D25();
+};
